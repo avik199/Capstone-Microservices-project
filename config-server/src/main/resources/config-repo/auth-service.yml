@@ -1,0 +1,29 @@
+server:
+  port: 8086
+
+spring:
+  application:
+    name: auth-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/projects
+    username: postgres
+    password: voldemort
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+#jwt:
+#  secret: mysupersecretkeymysupersecretkeymysupersecretkey
+#  expiration: 86400000   # 1 day in milliseconds
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
