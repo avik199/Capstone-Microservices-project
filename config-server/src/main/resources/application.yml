@@ -14,7 +14,15 @@ spring:
         native:
           search-locations: classpath:/config-repo
 
+        # git:
+        #   uri: https://github.com/avik199/Capstone-Project-Configurations
+        #   clone-on-start: true
+        #   default-label: main
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+
+  instance:
+    prefer-ip-address: true
