@@ -23,7 +23,7 @@ public class Order {
 
     private Integer quantity;
 
-    private BigDecimal price;
+//    private BigDecimal price;
 
     private UUID userId;      // NEW
     private String userEmail; // NEW

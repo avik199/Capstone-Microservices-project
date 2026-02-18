@@ -56,7 +56,7 @@ public class OrderService {
         Order order = Order.builder()
                 .sku(sku)
                 .quantity(quantity)
-                .price(product.getPrice())
+//                .price(product.getPrice())
                 .userId(userId)
                 .userEmail(email)
                 .status(OrderStatus.PENDING_PAYMENT)

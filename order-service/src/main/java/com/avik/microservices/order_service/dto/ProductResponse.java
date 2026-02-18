@@ -8,5 +8,5 @@ import java.math.BigDecimal;
 public class ProductResponse {
     private String sku;
     private String name;
-    private BigDecimal price;
+//    private BigDecimal price;
 }
